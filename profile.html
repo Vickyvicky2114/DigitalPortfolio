@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIGNESH.A - Portfolio</title>
+    <style>
+        body{
+        background-image: url(2.png);
+        background-repeat:  no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+        backface-visibility: initial;
+       }  
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: #333;
+            background-image: url(3409297.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            background-repeat:  no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+            backface-visibility: initial;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 180px; /* Adjust the size as needed */
+            height: 180px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 10px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            background-image: url(copy.jpg);
+            border: 10px#333;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            color: #fff;
+            background-color: none;
+            border: whitesmoke;
+            border-radius: 8px;
+            outline-style: solid;
+            outline-color: lightgray;
+            outline-width: medium;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-image: url(3409297.jpg);
+            border: #333;
+            background-color: #333;
+            color: #fff;
+            background-color: none;
+            border: 1px solid black;
+            outline-style: solid;
+            outline-color: lightgray;
+            outline-width: medium;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="169444363866.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>VIGNESH.A</h1>
+            <p>college student</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2><u>About Me</u></h2>
+            <p> I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><u>Education</u></h2>
+            <p>Bharathidhasan university-Urumu Dhanlakshmi College-B.Sc(Computer Science)
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2><u>Skills</u></h2>
+            <ul>
+                <li>HTML</li>
+                <li>java</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Projects">
+          <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="indexx.html">login page</a></li>
+                <li><a href="mywebb.html">wep page of my trichy</a></li>
+            </ul>
+          </div>
+    </section>
+
+
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="cv24-Oct-2023 5-33 pm.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 VIGNESH A</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
